@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/image/logo.png">
+
+    <title>Rotary Club of Occidental Mindoro</title>
+
+    <!-- Navbar -->
+<body>
+<header class="navbar">
+
+    <h3>Rotary Club of Occidental Mindoro</h3>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#AboutUs">About Us</a></li>
+        <li><a href="#objectives">Objectives</a></li>
+        <li><a href="#Officials"> Officials </a></li>
+        <li><a href="Mission & Vision">Mission & Vision</a></li>
+        <li><a href="#contact">Contact</a></li>
+        
+    </ul>
+</header>
+
+<div class="main-content">
+    <!-- About Us Section (Learnify UI Structure) -->
+    <section id="aboutUs">
+        <h1>About Us</h1>
+        <div class="about-container">
+            <div class="about-text">
+                <p>"The Rotary Club of Occidental Mindoro is a community-driven organization dedicated to making a lasting impact through volunteerism, 
+                    outreach programs, and service initiatives. We strive to connect individuals, empower communities, and promote positive change through 
+                    collective action. Our commitment to service above self drives us to foster leadership, strengthen partnerships, and create meaningful 
+                    opportunities for growth and development. Together, we build a better future—one act of service at a time."</p>
+               
+            </div>
+            <div class="about-slider">
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <div class="slides">
+                    <img src="/image/img1.jpg" alt="Rotary Activity 1">
+                    <img src="/image/img2.jpg" alt="Rotary Activity 2">
+                    <img src="/image/img3.jpg" alt="Rotary Activity 3">
+                </div>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+
+   <!-- Objectives Section -->
+<section id="objectives">
+    <h1>Objectives</h1>
+    <div class="objective-container">
+      <div class="objective-card">
+        <h3>Enhance Community Outreach</h3>
+        <p>Providing a digital platform for better engagement.</p>
+        <button class="expand-btn" onclick="toggleObjective(0)">Learn More</button>
+        <div class="objective-details">
+          <p>We aim to connect people with real-time updates, volunteer sign-ups, and impact tracking.</p>
+        </div>
+      </div>
+  
+      <div class="objective-card">
+        <h3>Streamline Volunteer Coordination</h3>
+        <p>Efficient scheduling and tracking system.</p>
+        <button class="expand-btn" onclick="toggleObjective(1)">Learn More</button>
+        <div class="objective-details">
+          <p>Our system ensures smooth volunteer management through smart scheduling and task assignments.</p>
+        </div>
+      </div>
+  
+      <div class="objective-card">
+        <h3>Improve Donation Management</h3>
+        <p>Real-time tracking and secure transactions.</p>
+        <button class="expand-btn" onclick="toggleObjective(2)">Learn More</button>
+        <div class="objective-details">
+          <p>We provide transparency in donations with real-time tracking and automated reporting.</p>
+        </div>
+      </div>
+  
+      <div class="objective-card">
+        <h3>To Reduce Waste and Promote Sustainability</h3>
+        <p>Encouraging eco-friendly and responsible resource usage.</p>
+        <button class="expand-btn" onclick="toggleObjective(3)">Learn More</button>
+        <div class="objective-details">
+          <p>We promote sustainability by organizing recycling drives, upcycling initiatives, and green education campaigns.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <!-- Officials Section -->
+  <section id="developers">
+    <h1>Meet Our Team</h1>
+    <div class="team-container">
+        <div class="team-member"><img src="/image/me2.jpg" alt="Daniella Nardo"><h3> Hime Zeourdeck</h3><p> Paper Research </p></div>
+        <div class="team-member"><img src="/image/DAN.jpg" alt="Hime Zeourdeck"><h3> Daniella Nardok</h3><p> Research </p><p></p></div>
+        <div class="team-member"><img src="/image/ED.jpg" alt="Kim Paulo Sombra"><h3>Edmon Brabonga</h3><p> Programmer </p></div>
+        <div class="team-member"><img src="/image/KIM.jpg" alt="Developer 4"><h3>Kim Sombra</h3><p> Assistant Prog. </p></div>
+        <div class="team-member"><img src="/image/caite.jpg" alt="Developer 5"><h3>Canny Caite Simeon</h3><p> Apprentise </p></div>
+    </div>
+</section>
+
+<!-- Contact Us Section -->
+<section id="contact">
+    <h1>Contact Us</h1>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>If you have any questions, feel free to reach out to us!</p>
+            <p><strong>Email:</strong> rotaryclub@example.com</p>
+            <p><strong>Phone:</strong> +63 912 345 6789</p>
+            <p><strong>Address:</strong> Occidental Mindoro, Philippines</p>
+        </div>
+
+        <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+ <!-- Footer with Bubbles -->
+ <footer class="footer">
+    <p>&copy; 2025 Rotary Club of Occidental Mindoro</p>
+    <div class="bubbles">
+        <div class="bubble" style="left:10%; animation-duration: 6s;"></div>
+        <div class="bubble" style="left:30%; animation-duration: 4s;"></div>
+        <div class="bubble" style="left:50%; animation-duration: 5s;"></div>
+        <div class="bubble" style="left:70%; animation-duration: 7s;"></div>
+        <div class="bubble" style="left:90%; animation-duration: 6.5s;"></div>
+    </div>
+</footer>
+<script src="js/about.js"></script>
+</div>
+</body>
+</html>

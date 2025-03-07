@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="container" id="signup" >
+        <h1 class="form-title">Register</h1>
+        <form id="register"  method="post" action="">
+          <div id="signUp" class="Div" style="display:none;"></div>
+          <div class="input-group">
+
+             <i class="fas fa-user"></i>
+             <input type="text"  id="fname" placeholder="First Name" required>
+             <label for="peas">First Name </label>
+          </div>
+          <div class="input-group">
+              <i class="fas fa-user"></i>
+              <input type="text"  id="lname" placeholder="Last Name" required>
+              <label for="peas">Last Name</label>
+          </div>
+      <div class="input-group">
+          <i class="fas fa-envelope"></i>
+          <input type="email"  id="email" placeholder="Email" required>
+          <label for="peas">Email</label>
+      </div>
+      <div class="input-group">
+          <i class="fas fa-lock"></i>
+        <input type="password" id="password"  placeholder="Password" required>
+          <label for="password">Password</label>
+         
+      </div>
+      <di><label>Must be 6 characters password</label></di>
+    
+     <button  class="btn"  id="submitbtn">Sign In</button>
+    </form>
+    <p class="or">
+      ----------or--------
+    </p>
+    <div class="icons">
+      <i class="fab fa-google"></i>
+      <i class="fab fa-facebook"></i>
+    </div>
+    <div class="links">
+      <p>Don't have account yet?</p>
+      <a href="singin.html">Sign In</a>
+     
+    </div>
+  </div>
+ 
+  
+        <script type="module" src="js/register.js" ></script>
+</body>
+</html>
+
+
